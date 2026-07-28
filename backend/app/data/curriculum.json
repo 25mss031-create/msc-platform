@@ -1,0 +1,224 @@
+{
+  "semesters": [
+    {
+      "semester_number": 3,
+      "name": "Semester 3",
+      "description": "Second Year - First Semester",
+      "courses": [
+        {
+          "code": "MSSC301",
+          "name": "Java Programming",
+          "description": "Advanced Java programming covering OOP concepts, collections, multithreading, I/O systems, and modern Java features including streams and lambdas.",
+          "credits": 4,
+          "icon": "☕",
+          "order": 1,
+          "skills_unlocked": ["Java Development", "Object-Oriented Design", "Concurrent Programming"],
+          "units": [
+            {
+              "title": "Java Fundamentals & OOP",
+              "description": "Core Java syntax, classes, inheritance, interfaces, and polymorphism",
+              "order": 1,
+              "lessons": [
+                {"title": "Java Platform & JVM Architecture", "content": "Understanding JVM, bytecode, class loading mechanism, and memory management in Java.", "duration_minutes": 20, "order": 1},
+                {"title": "Classes, Objects & Encapsulation", "content": "Creating classes, constructors, access modifiers, getters/setters, and the 'this' keyword.", "duration_minutes": 25, "order": 2},
+                {"title": "Inheritance & Polymorphism", "content": "extends keyword, method overriding, super keyword, abstract classes, and dynamic method dispatch.", "duration_minutes": 25, "order": 3},
+                {"title": "Interfaces & Abstract Classes", "content": "Defining interfaces, default methods, functional interfaces, and when to use abstract vs interface.", "duration_minutes": 20, "order": 4},
+                {"title": "Packages & Access Control", "content": "Package declaration, import statements, classpath, and access modifiers in depth.", "duration_minutes": 15, "order": 5}
+              ]
+            },
+            {
+              "title": "Collections Framework & Generics",
+              "description": "Java Collections Framework, generic types, and type safety",
+              "order": 2,
+              "lessons": [
+                {"title": "Generics & Type Parameters", "content": "Generic classes, methods, bounded type parameters, and type erasure.", "duration_minutes": 25, "order": 1},
+                {"title": "List, Set & Queue Interfaces", "content": "ArrayList, LinkedList, HashSet, TreeSet, PriorityQueue and their use cases.", "duration_minutes": 25, "order": 2},
+                {"title": "Map Interfaces & Implementations", "content": "HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap and hash table concepts.", "duration_minutes": 20, "order": 3},
+                {"title": "Comparable & Comparator", "content": "Natural ordering with Comparable, custom sorting with Comparator, and lambda-based sorting.", "duration_minutes": 15, "order": 4},
+                {"title": "Stream API & Lambda Expressions", "content": "Functional programming in Java: streams, map/filter/reduce, method references, and Optional.", "duration_minutes": 30, "order": 5}
+              ]
+            },
+            {
+              "title": "Multithreading & Concurrency",
+              "description": "Thread management, synchronization, and concurrent utilities",
+              "order": 3,
+              "lessons": [
+                {"title": "Thread Creation & Lifecycle", "content": "Extending Thread class, implementing Runnable, thread states, and daemon threads.", "duration_minutes": 25, "order": 1},
+                {"title": "Synchronization & Locks", "content": "Synchronized blocks/methods, intrinsic locks, reentrant locks, and deadlock prevention.", "duration_minutes": 25, "order": 2},
+                {"title": "Inter-Thread Communication", "content": "wait(), notify(), notifyAll() methods, producer-consumer pattern, and condition variables.", "duration_minutes": 20, "order": 3},
+                {"title": "Executor Framework", "content": "Thread pools, ExecutorService, Callable/Future, and ScheduledExecutorService.", "duration_minutes": 25, "order": 4},
+                {"title": "Concurrent Collections & Utilities", "content": "ConcurrentHashMap, CopyOnWriteArrayList, CountDownLatch, CyclicBarrier, and atomic variables.", "duration_minutes": 25, "order": 5}
+              ]
+            },
+            {
+              "title": "Java I/O & Networking",
+              "description": "File handling, serialization, and network programming",
+              "order": 4,
+              "lessons": [
+                {"title": "Byte Streams & Character Streams", "content": "InputStream/OutputStream, Reader/Writer hierarchies, buffering, and data streams.", "duration_minutes": 20, "order": 1},
+                {"title": "File I/O & NIO", "content": "File class, RandomAccessFile, NIO channels, buffers, and Files utility class.", "duration_minutes": 25, "order": 2},
+                {"title": "Object Serialization", "content": "Serializable interface, transient keyword, serialVersionUID, and custom serialization.", "duration_minutes": 20, "order": 3},
+                {"title": "Socket Programming", "content": "TCP sockets, ServerSocket, UDP datagrams, and building a simple client-server application.", "duration_minutes": 30, "order": 4},
+                {"title": "Java NIO & Asynchronous I/O", "content": "Non-blocking I/O, selectors, channels, and AsynchronousSocketChannel.", "duration_minutes": 25, "order": 5}
+              ]
+            },
+            {
+              "title": "Advanced Java Features",
+              "description": "Modules, records, patterns, and modern Java idioms",
+              "order": 5,
+              "lessons": [
+                {"title": "Java Module System (JPMS)", "content": "module-info.java, module descriptors, requires/exports directives, and service loading.", "duration_minutes": 25, "order": 1},
+                {"title": "Records, Sealed Classes & Pattern Matching", "content": "Record classes, sealed hierarchies, pattern matching for instanceof and switch.", "duration_minutes": 20, "order": 2},
+                {"title": "Date & Time API", "content": "java.time package: LocalDate, LocalTime, Duration, Period, and timezone handling.", "duration_minutes": 15, "order": 3},
+                {"title": "JDBC & Database Connectivity", "content": "Connection, Statement, PreparedStatement, ResultSet, and transaction management.", "duration_minutes": 25, "order": 4},
+                {"title": "Reflection & Annotations", "content": "Class loading, reflective access, built-in annotations, creating custom annotations, and annotation processing.", "duration_minutes": 25, "order": 5}
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MSSC302",
+          "name": "Data Warehouse & Data Pipeline",
+          "description": "Concepts and technologies for data warehousing, ETL processes, dimensional modeling, and modern data pipeline architectures.",
+          "credits": 4,
+          "icon": "🗄️",
+          "order": 2,
+          "skills_unlocked": ["Data Warehousing", "ETL Development", "Data Pipeline Engineering"],
+          "units": [
+            {
+              "title": "Data Warehouse Concepts & Architecture",
+              "description": "Fundamental concepts of data warehousing and system architecture",
+              "order": 1,
+              "lessons": [
+                {"title": "Introduction to Data Warehousing", "content": "Definition, characteristics, and need for data warehouses. OLTP vs OLAP systems.", "duration_minutes": 20, "order": 1},
+                {"title": "Data Warehouse Architecture", "content": "Three-tier architecture: bottom tier (DB), middle tier (OLAP), top tier (reporting). Data marts and ODS.", "duration_minutes": 25, "order": 2},
+                {"title": "ETL vs ELT Approaches", "content": "Extract, Transform, Load processes. When to use ETL vs ELT. Modern data integration patterns.", "duration_minutes": 20, "order": 3},
+                {"title": "Data Warehouse Lifecycle", "content": "Kimball lifecycle methodology: project planning, requirements gathering, dimensional modeling, implementation.", "duration_minutes": 15, "order": 4},
+                {"title": "Data Quality & Governance", "content": "Data profiling, cleansing, deduplication, data lineage, and metadata management.", "duration_minutes": 20, "order": 5}
+              ]
+            },
+            {
+              "title": "Dimensional Modeling",
+              "description": "Star schema, snowflake schema, fact and dimension table design",
+              "order": 2,
+              "lessons": [
+                {"title": "Fact Tables", "content": "Transactional, periodic snapshot, and accumulating snapshot fact tables. Grain declaration.", "duration_minutes": 25, "order": 1},
+                {"title": "Dimension Tables", "content": "Conformed, degenerate, junk, and role-playing dimensions. SCD types (Type 0, 1, 2, 3).", "duration_minutes": 25, "order": 2},
+                {"title": "Star Schema Design", "content": "Fact table in center surrounded by dimension tables. Benefits and trade-offs of star schema.", "duration_minutes": 20, "order": 3},
+                {"title": "Snowflake Schema Design", "content": "Normalized dimensions, hierarchy representation, and when to use snowflake over star.", "duration_minutes": 15, "order": 4},
+                {"title": "Slowly Changing Dimensions", "content": "Implementing Type 0 through Type 6 SCDs. Handling history and current values.", "duration_minutes": 25, "order": 5}
+              ]
+            },
+            {
+              "title": "ETL Processes & Tools",
+              "description": "Building robust ETL pipelines with industry tools",
+              "order": 3,
+              "lessons": [
+                {"title": "Data Extraction Strategies", "content": "Full vs incremental extraction, CDC (Change Data Capture), and API-based extraction.", "duration_minutes": 25, "order": 1},
+                {"title": "Data Transformation Techniques", "content": "Cleaning, mapping, aggregation, enrichment, and data type conversions.", "duration_minutes": 20, "order": 2},
+                {"title": "Data Loading Methods", "content": "Initial load, incremental load, upsert/merge strategies, and batch vs streaming loads.", "duration_minutes": 20, "order": 3},
+                {"title": "Apache NiFi & Airflow", "content": "Building data pipelines with Apache NiFi and orchestrating with Apache Airflow DAGs.", "duration_minutes": 30, "order": 4},
+                {"title": "dbt for Data Transformation", "content": "Data build tool: models, tests, documentation, and incremental models in modern ELT.", "duration_minutes": 25, "order": 5}
+              ]
+            },
+            {
+              "title": "Data Pipeline Architecture",
+              "description": "Designing scalable and reliable data pipelines",
+              "order": 4,
+              "lessons": [
+                {"title": "Batch Processing Architecture", "content": "Batch pipeline design patterns, scheduling, error handling, and recovery mechanisms.", "duration_minutes": 25, "order": 1},
+                {"title": "Streaming Data Pipelines", "content": "Kafka topics, producers/consumers, stream processing with Kafka Streams and Flink.", "duration_minutes": 30, "order": 2},
+                {"title": "Lambda & Kappa Architectures", "content": "Batch + streaming (Lambda) vs pure streaming (Kappa) architecture trade-offs.", "duration_minutes": 20, "order": 3},
+                {"title": "Data Lakehouse Architecture", "content": "Lakehouse paradigm: Delta Lake, Apache Iceberg, and combining data lakes with warehouse capabilities.", "duration_minutes": 25, "order": 4},
+                {"title": "Pipeline Monitoring & Observability", "content": "Data quality checks, lineage tracking, alerting, SLA monitoring, and pipeline debugging.", "duration_minutes": 20, "order": 5}
+              ]
+            },
+            {
+              "title": "Modern Data Platforms",
+              "description": "Cloud data warehouses and big data technologies",
+              "order": 5,
+              "lessons": [
+                {"title": "Cloud Data Warehouses", "content": "Snowflake, Amazon Redshift, Google BigQuery architecture, pricing, and use cases.", "duration_minutes": 25, "order": 1},
+                {"title": "Apache Spark for Data Processing", "content": "Spark RDDs, DataFrames, Spark SQL, and optimizing Spark jobs for ETL.", "duration_minutes": 30, "order": 2},
+                {"title": "Data Catalog & Discovery", "content": "Data catalog tools, schema registry, data discovery, and business glossary management.", "duration_minutes": 15, "order": 3},
+                {"title": "OLAP Cubes & MDX", "content": "Multidimensional OLAP, cube operations (drill-down, roll-up, slice, dice), and MDX queries.", "duration_minutes": 25, "order": 4},
+                {"title": "Data Warehouse Performance Tuning", "content": "Indexing strategies, partitioning, clustering, materialized views, and query optimization.", "duration_minutes": 25, "order": 5}
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MSSC303",
+          "name": "Data Structures",
+          "description": "Comprehensive study of data structures including arrays, linked lists, trees, graphs, hash tables, and algorithm analysis.",
+          "credits": 4,
+          "icon": "📊",
+          "order": 3,
+          "skills_unlocked": ["Algorithm Design", "Data Structure Optimization", "Problem Solving"],
+          "units": [
+            {
+              "title": "Linear Data Structures",
+              "description": "Arrays, linked lists, stacks, and queues with their applications",
+              "order": 1,
+              "lessons": [
+                {"title": "Arrays & Dynamic Arrays", "content": "Array operations, time complexity, dynamic resizing, and multi-dimensional arrays.", "duration_minutes": 20, "order": 1},
+                {"title": "Singly & Doubly Linked Lists", "content": "Node structure, insertion, deletion, traversal, reversal, and circular linked lists.", "duration_minutes": 25, "order": 2},
+                {"title": "Stacks & Applications", "content": "Stack operations, array vs linked list implementation, expression evaluation, and undo functionality.", "duration_minutes": 20, "order": 3},
+                {"title": "Queues & Deques", "content": "Queue, circular queue, priority queue, deque operations, and scheduling applications.", "duration_minutes": 20, "order": 4},
+                {"title": "Skip Lists", "content": "Probabilistic data structure, levels, search/insert/delete operations, and performance analysis.", "duration_minutes": 15, "order": 5}
+              ]
+            },
+            {
+              "title": "Trees & Tree Algorithms",
+              "description": "Binary trees, BSTs, AVL trees, B-trees, and tree traversals",
+              "order": 2,
+              "lessons": [
+                {"title": "Binary Trees & Traversals", "content": "Tree terminology, inorder/preorder/postorder/level-order traversals, and recursive implementations.", "duration_minutes": 25, "order": 1},
+                {"title": "Binary Search Trees", "content": "BST property, search, insert, delete operations, and analysis of balanced vs skewed trees.", "duration_minutes": 25, "order": 2},
+                {"title": "AVL Trees & Rotations", "content": "Balance factor, LL/RR/LR/RL rotations, insertion and deletion in AVL trees.", "duration_minutes": 30, "order": 3},
+                {"title": "B-Trees & B+ Trees", "content": "Multi-way search trees, B-tree properties, insertion/deletion algorithms, and database indexing.", "duration_minutes": 25, "order": 4},
+                {"title": "Heaps & Heap Sort", "content": "Min-heap, max-heap, heapify, heap sort algorithm, and priority queue implementation.", "duration_minutes": 20, "order": 5}
+              ]
+            },
+            {
+              "title": "Graphs & Graph Algorithms",
+              "description": "Graph representations, traversals, shortest paths, and spanning trees",
+              "order": 3,
+              "lessons": [
+                {"title": "Graph Representations", "content": "Adjacency matrix, adjacency list, edge list, and space-time trade-offs.", "duration_minutes": 20, "order": 1},
+                {"title": "BFS & DFS Traversals", "content": "Breadth-first search, depth-first search, connected components, and topological sort.", "duration_minutes": 25, "order": 2},
+                {"title": "Shortest Path Algorithms", "content": "Dijkstra's algorithm, Bellman-Ford, Floyd-Warshall, and A* search.", "duration_minutes": 30, "order": 3},
+                {"title": "Minimum Spanning Trees", "content": "Prim's algorithm, Kruskal's algorithm, union-find data structure, and applications.", "duration_minutes": 25, "order": 4},
+                {"title": "Network Flow & Matching", "content": "Ford-Fulkerson method, Edmonds-Karp algorithm, max-flow min-cut theorem, and bipartite matching.", "duration_minutes": 25, "order": 5}
+              ]
+            },
+            {
+              "title": "Hash Tables & Dictionaries",
+              "description": "Hash functions, collision resolution, and hash-based data structures",
+              "order": 4,
+              "lessons": [
+                {"title": "Hash Functions & Design", "content": "Properties of good hash functions, universal hashing, cryptographic vs non-cryptographic hashes.", "duration_minutes": 20, "order": 1},
+                {"title": "Collision Resolution Strategies", "content": "Chaining, open addressing (linear/quadratic probing), double hashing, and performance analysis.", "duration_minutes": 25, "order": 2},
+                {"title": "Bloom Filters", "content": "Probabilistic membership testing, false positive rate, bit array operations, and applications.", "duration_minutes": 15, "order": 3},
+                {"title": "Cuckoo Hashing & Hopscotch Hashing", "content": "Cuckoo hashing with multiple tables, hopscotch hashing with neighborhood concept.", "duration_minutes": 20, "order": 4},
+                {"title": "Consistent Hashing", "content": "Distributed hash tables, consistent hashing for load balancing, and Dynamo-style databases.", "duration_minutes": 20, "order": 5}
+              ]
+            },
+            {
+              "title": "Advanced Data Structures",
+              "description": "Trie, segment tree, Fenwick tree, and union-find",
+              "order": 5,
+              "lessons": [
+                {"title": "Tries & Prefix Trees", "content": "Trie structure, insertion, search, prefix matching, autocomplete systems, and space optimization (radix tree).", "duration_minutes": 25, "order": 1},
+                {"title": "Segment Trees", "content": "Range query and point update, building segment trees, lazy propagation, and 2D segment trees.", "duration_minutes": 30, "order": 2},
+                {"title": "Fenwick Tree (BIT)", "content": "Binary indexed tree, prefix sum queries, point updates, and range updates.", "duration_minutes": 20, "order": 3},
+                {"title": "Disjoint Set Union (Union-Find)", "content": "Union by rank, path compression, cycle detection in graphs, and Kruskal's algorithm integration.", "duration_minutes": 20, "order": 4},
+                {"title": "Suffix Arrays & LCP", "content": "Suffix array construction, longest common prefix array, and applications in pattern matching.", "duration_minutes": 25, "order": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
