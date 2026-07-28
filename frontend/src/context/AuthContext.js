@@ -5,8 +5,8 @@ const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [token, setToken] = useState(localStorage.getItem('msc_token'));
-  const [loading, setLoading] = useState(true);
+const [token, setToken] = useState(localStorage.getItem('msc_token'));
+const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (token) {
